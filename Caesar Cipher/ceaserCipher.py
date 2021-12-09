@@ -5,12 +5,7 @@ class CeaserCipher:
 		self.encoding_maps = dict([(chr(i), idx) for idx, i in enumerate(range(65, 91))])	
 		self.encoded_text = []					
 		self.decoded_text = []
-
-	# def ntl(self, number):
-	# 	for key, val in self.encoding_maps.items():
-	# 		if val == number:
-	# 			return key	
-
+		
 	def numberToLetter(self, num):
 		return chr(num + 65)
 
