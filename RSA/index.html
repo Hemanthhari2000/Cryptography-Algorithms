@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RSA</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>p: </td>
+			<td><input type="number" name="p" id="p"></td>
+		</tr>
+		<tr>
+			<td>q: </td>
+			<td><input type="number" name="q" id="q"></td>
+		</tr>
+		<tr>
+			<td>Message: </td>
+			<td><input type="number" name="msg"	id="msg"></td>
+		</tr>
+		<tr>
+			<td>Public Key: </td>
+			<td><p id="publicKey"></p></td>
+		</tr>
+		<tr>
+			<td>Private Key: </td>
+			<td><p id="privateKey"></p></td>
+		</tr>
+		<tr>
+			<td>Cipher: </td>
+			<td><p id="cipherText"></p></td>
+		</tr>
+		<tr>
+			<td><button onclick="rsa()">Calculate</button></td>
+		</tr>
+	</table>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
