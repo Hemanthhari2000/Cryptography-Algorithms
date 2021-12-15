@@ -7,6 +7,7 @@ ciphertext = []
 deciphertext = []
 def numberToLetter(num):
     return chr(num + 65)
+    
 for letter in plaintext.upper():
     val = encoding_maps[letter]
     encoded_letter = numberToLetter((val + key) % 26)
